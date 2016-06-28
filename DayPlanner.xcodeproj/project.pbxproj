@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF05864B1D220A1500B4878F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05864A1D220A1500B4878F /* AppDelegate.swift */; };
+		DF05864D1D220A1500B4878F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05864C1D220A1500B4878F /* ViewController.swift */; };
+		DF0586501D220A1500B4878F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF05864E1D220A1500B4878F /* Main.storyboard */; };
+		DF0586531D220A1500B4878F /* DayPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF0586511D220A1500B4878F /* DayPlanner.xcdatamodeld */; };
+		DF0586551D220A1500B4878F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0586541D220A1500B4878F /* Assets.xcassets */; };
+		DF0586581D220A1500B4878F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0586561D220A1500B4878F /* LaunchScreen.storyboard */; };
+		DF0586631D220A1600B4878F /* DayPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586621D220A1600B4878F /* DayPlannerTests.swift */; };
+		DF05866E1D220A1600B4878F /* DayPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05866D1D220A1600B4878F /* DayPlannerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF05865F1D220A1600B4878F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF05863F1D220A1500B4878F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF0586461D220A1500B4878F;
+			remoteInfo = DayPlanner;
+		};
+		DF05866A1D220A1600B4878F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF05863F1D220A1500B4878F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF0586461D220A1500B4878F;
+			remoteInfo = DayPlanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF0586471D220A1500B4878F /* DayPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF05864A1D220A1500B4878F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF05864C1D220A1500B4878F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF05864F1D220A1500B4878F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF0586521D220A1500B4878F /* DayPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DayPlanner.xcdatamodel; sourceTree = "<group>"; };
+		DF0586541D220A1500B4878F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF0586571D220A1500B4878F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF0586591D220A1500B4878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF05865E1D220A1600B4878F /* DayPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0586621D220A1600B4878F /* DayPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerTests.swift; sourceTree = "<group>"; };
+		DF0586641D220A1600B4878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF0586691D220A1600B4878F /* DayPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF05866D1D220A1600B4878F /* DayPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerUITests.swift; sourceTree = "<group>"; };
+		DF05866F1D220A1600B4878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF0586441D220A1500B4878F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF05865B1D220A1600B4878F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0586661D220A1600B4878F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF05863E1D220A1500B4878F = {
+			isa = PBXGroup;
+			children = (
+				DF0586491D220A1500B4878F /* DayPlanner */,
+				DF0586611D220A1600B4878F /* DayPlannerTests */,
+				DF05866C1D220A1600B4878F /* DayPlannerUITests */,
+				DF0586481D220A1500B4878F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF0586481D220A1500B4878F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF0586471D220A1500B4878F /* DayPlanner.app */,
+				DF05865E1D220A1600B4878F /* DayPlannerTests.xctest */,
+				DF0586691D220A1600B4878F /* DayPlannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF0586491D220A1500B4878F /* DayPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				DF05864A1D220A1500B4878F /* AppDelegate.swift */,
+				DF05864C1D220A1500B4878F /* ViewController.swift */,
+				DF05864E1D220A1500B4878F /* Main.storyboard */,
+				DF0586541D220A1500B4878F /* Assets.xcassets */,
+				DF0586561D220A1500B4878F /* LaunchScreen.storyboard */,
+				DF0586591D220A1500B4878F /* Info.plist */,
+				DF0586511D220A1500B4878F /* DayPlanner.xcdatamodeld */,
+			);
+			path = DayPlanner;
+			sourceTree = "<group>";
+		};
+		DF0586611D220A1600B4878F /* DayPlannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF0586621D220A1600B4878F /* DayPlannerTests.swift */,
+				DF0586641D220A1600B4878F /* Info.plist */,
+			);
+			path = DayPlannerTests;
+			sourceTree = "<group>";
+		};
+		DF05866C1D220A1600B4878F /* DayPlannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF05866D1D220A1600B4878F /* DayPlannerUITests.swift */,
+				DF05866F1D220A1600B4878F /* Info.plist */,
+			);
+			path = DayPlannerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF0586461D220A1500B4878F /* DayPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF0586721D220A1600B4878F /* Build configuration list for PBXNativeTarget "DayPlanner" */;
+			buildPhases = (
+				DF0586431D220A1500B4878F /* Sources */,
+				DF0586441D220A1500B4878F /* Frameworks */,
+				DF0586451D220A1500B4878F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DayPlanner;
+			productName = DayPlanner;
+			productReference = DF0586471D220A1500B4878F /* DayPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF05865D1D220A1600B4878F /* DayPlannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF0586751D220A1600B4878F /* Build configuration list for PBXNativeTarget "DayPlannerTests" */;
+			buildPhases = (
+				DF05865A1D220A1600B4878F /* Sources */,
+				DF05865B1D220A1600B4878F /* Frameworks */,
+				DF05865C1D220A1600B4878F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF0586601D220A1600B4878F /* PBXTargetDependency */,
+			);
+			name = DayPlannerTests;
+			productName = DayPlannerTests;
+			productReference = DF05865E1D220A1600B4878F /* DayPlannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF0586681D220A1600B4878F /* DayPlannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF0586781D220A1600B4878F /* Build configuration list for PBXNativeTarget "DayPlannerUITests" */;
+			buildPhases = (
+				DF0586651D220A1600B4878F /* Sources */,
+				DF0586661D220A1600B4878F /* Frameworks */,
+				DF0586671D220A1600B4878F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF05866B1D220A1600B4878F /* PBXTargetDependency */,
+			);
+			name = DayPlannerUITests;
+			productName = DayPlannerUITests;
+			productReference = DF0586691D220A1600B4878F /* DayPlannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF05863F1D220A1500B4878F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = rlasante;
+				TargetAttributes = {
+					DF0586461D220A1500B4878F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					DF05865D1D220A1600B4878F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = DF0586461D220A1500B4878F;
+					};
+					DF0586681D220A1600B4878F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = DF0586461D220A1500B4878F;
+					};
+				};
+			};
+			buildConfigurationList = DF0586421D220A1500B4878F /* Build configuration list for PBXProject "DayPlanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF05863E1D220A1500B4878F;
+			productRefGroup = DF0586481D220A1500B4878F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF0586461D220A1500B4878F /* DayPlanner */,
+				DF05865D1D220A1600B4878F /* DayPlannerTests */,
+				DF0586681D220A1600B4878F /* DayPlannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF0586451D220A1500B4878F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0586581D220A1500B4878F /* LaunchScreen.storyboard in Resources */,
+				DF0586551D220A1500B4878F /* Assets.xcassets in Resources */,
+				DF0586501D220A1500B4878F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF05865C1D220A1600B4878F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0586671D220A1600B4878F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF0586431D220A1500B4878F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF05864D1D220A1500B4878F /* ViewController.swift in Sources */,
+				DF0586531D220A1500B4878F /* DayPlanner.xcdatamodeld in Sources */,
+				DF05864B1D220A1500B4878F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF05865A1D220A1600B4878F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0586631D220A1600B4878F /* DayPlannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0586651D220A1600B4878F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF05866E1D220A1600B4878F /* DayPlannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF0586601D220A1600B4878F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF0586461D220A1500B4878F /* DayPlanner */;
+			targetProxy = DF05865F1D220A1600B4878F /* PBXContainerItemProxy */;
+		};
+		DF05866B1D220A1600B4878F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF0586461D220A1500B4878F /* DayPlanner */;
+			targetProxy = DF05866A1D220A1600B4878F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF05864E1D220A1500B4878F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF05864F1D220A1500B4878F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF0586561D220A1500B4878F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF0586571D220A1500B4878F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF0586701D220A1600B4878F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF0586711D220A1600B4878F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF0586731D220A1600B4878F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DayPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rlasante.DayPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DF0586741D220A1600B4878F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DayPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rlasante.DayPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DF0586761D220A1600B4878F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DayPlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rlasante.DayPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DayPlanner.app/DayPlanner";
+			};
+			name = Debug;
+		};
+		DF0586771D220A1600B4878F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DayPlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rlasante.DayPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DayPlanner.app/DayPlanner";
+			};
+			name = Release;
+		};
+		DF0586791D220A1600B4878F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DayPlannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rlasante.DayPlannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DayPlanner;
+			};
+			name = Debug;
+		};
+		DF05867A1D220A1600B4878F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DayPlannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rlasante.DayPlannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DayPlanner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF0586421D220A1500B4878F /* Build configuration list for PBXProject "DayPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0586701D220A1600B4878F /* Debug */,
+				DF0586711D220A1600B4878F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF0586721D220A1600B4878F /* Build configuration list for PBXNativeTarget "DayPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0586731D220A1600B4878F /* Debug */,
+				DF0586741D220A1600B4878F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF0586751D220A1600B4878F /* Build configuration list for PBXNativeTarget "DayPlannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0586761D220A1600B4878F /* Debug */,
+				DF0586771D220A1600B4878F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF0586781D220A1600B4878F /* Build configuration list for PBXNativeTarget "DayPlannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0586791D220A1600B4878F /* Debug */,
+				DF05867A1D220A1600B4878F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF0586511D220A1500B4878F /* DayPlanner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF0586521D220A1500B4878F /* DayPlanner.xcdatamodel */,
+			);
+			currentVersion = DF0586521D220A1500B4878F /* DayPlanner.xcdatamodel */;
+			path = DayPlanner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DF05863F1D220A1500B4878F /* Project object */;
+}
