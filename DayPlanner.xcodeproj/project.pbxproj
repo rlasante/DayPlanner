@@ -15,6 +15,24 @@
 		DF0586581D220A1500B4878F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0586561D220A1500B4878F /* LaunchScreen.storyboard */; };
 		DF0586631D220A1600B4878F /* DayPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586621D220A1600B4878F /* DayPlannerTests.swift */; };
 		DF05866E1D220A1600B4878F /* DayPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05866D1D220A1600B4878F /* DayPlannerUITests.swift */; };
+		DF05868A1D220F2800B4878F /* Thought+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05867E1D220F2800B4878F /* Thought+CoreDataProperties.swift */; };
+		DF05868B1D220F2800B4878F /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05867F1D220F2800B4878F /* Thought.swift */; };
+		DF05868C1D220F2800B4878F /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586801D220F2800B4878F /* Day+CoreDataProperties.swift */; };
+		DF05868D1D220F2800B4878F /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586811D220F2800B4878F /* Day.swift */; };
+		DF05868E1D220F2800B4878F /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586821D220F2800B4878F /* Task+CoreDataProperties.swift */; };
+		DF05868F1D220F2800B4878F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586831D220F2800B4878F /* Task.swift */; };
+		DF0586901D220F2800B4878F /* FocusSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586841D220F2800B4878F /* FocusSession+CoreDataProperties.swift */; };
+		DF0586911D220F2800B4878F /* FocusSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586851D220F2800B4878F /* FocusSession.swift */; };
+		DF0586921D220F2800B4878F /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586861D220F2800B4878F /* Goal+CoreDataProperties.swift */; };
+		DF0586931D220F2800B4878F /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586871D220F2800B4878F /* Goal.swift */; };
+		DF0586941D220F2800B4878F /* Retro+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586881D220F2800B4878F /* Retro+CoreDataProperties.swift */; };
+		DF0586951D220F2800B4878F /* Retro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586891D220F2800B4878F /* Retro.swift */; };
+		DF0586971D22117100B4878F /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586961D22117100B4878F /* Priority.swift */; };
+		DF0586991D22124F00B4878F /* PriorityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586981D22124F00B4878F /* PriorityTest.swift */; };
+		DF256BB71D221BF000BD24F0 /* CompilerHack.c in Sources */ = {isa = PBXBuildFile; fileRef = DF256BB61D221BF000BD24F0 /* CompilerHack.c */; };
+		DF256BB91D221D9300BD24F0 /* ContextAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BB81D221D9300BD24F0 /* ContextAware.swift */; };
+		DF256BBB1D2220BB00BD24F0 /* ThoughtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BBA1D2220BB00BD24F0 /* ThoughtTest.swift */; };
+		DF256BBE1D2221ED00BD24F0 /* NSManagedObject+Planner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BBD1D2221ED00BD24F0 /* NSManagedObject+Planner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +67,24 @@
 		DF0586691D220A1600B4878F /* DayPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF05866D1D220A1600B4878F /* DayPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerUITests.swift; sourceTree = "<group>"; };
 		DF05866F1D220A1600B4878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF05867E1D220F2800B4878F /* Thought+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Thought+CoreDataProperties.swift"; path = "Classes/Thought+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DF05867F1D220F2800B4878F /* Thought.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Thought.swift; path = Classes/Thought.swift; sourceTree = "<group>"; };
+		DF0586801D220F2800B4878F /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day+CoreDataProperties.swift"; path = "Classes/Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DF0586811D220F2800B4878F /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Day.swift; path = Classes/Day.swift; sourceTree = "<group>"; };
+		DF0586821D220F2800B4878F /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Task+CoreDataProperties.swift"; path = "Classes/Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DF0586831D220F2800B4878F /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Classes/Task.swift; sourceTree = "<group>"; };
+		DF0586841D220F2800B4878F /* FocusSession+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FocusSession+CoreDataProperties.swift"; path = "Classes/FocusSession+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DF0586851D220F2800B4878F /* FocusSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FocusSession.swift; path = Classes/FocusSession.swift; sourceTree = "<group>"; };
+		DF0586861D220F2800B4878F /* Goal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Goal+CoreDataProperties.swift"; path = "Classes/Goal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DF0586871D220F2800B4878F /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Goal.swift; path = Classes/Goal.swift; sourceTree = "<group>"; };
+		DF0586881D220F2800B4878F /* Retro+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Retro+CoreDataProperties.swift"; path = "Classes/Retro+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DF0586891D220F2800B4878F /* Retro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Retro.swift; path = Classes/Retro.swift; sourceTree = "<group>"; };
+		DF0586961D22117100B4878F /* Priority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Classes/Priority.swift; sourceTree = "<group>"; };
+		DF0586981D22124F00B4878F /* PriorityTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityTest.swift; sourceTree = "<group>"; };
+		DF256BB61D221BF000BD24F0 /* CompilerHack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CompilerHack.c; sourceTree = "<group>"; };
+		DF256BB81D221D9300BD24F0 /* ContextAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextAware.swift; path = Classes/ContextAware.swift; sourceTree = "<group>"; };
+		DF256BBA1D2220BB00BD24F0 /* ThoughtTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtTest.swift; sourceTree = "<group>"; };
+		DF256BBD1D2221ED00BD24F0 /* NSManagedObject+Planner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Planner.swift"; path = "Classes/NSManagedObject+Planner.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +135,12 @@
 		DF0586491D220A1500B4878F /* DayPlanner */ = {
 			isa = PBXGroup;
 			children = (
-				DF05864A1D220A1500B4878F /* AppDelegate.swift */,
-				DF05864C1D220A1500B4878F /* ViewController.swift */,
-				DF05864E1D220A1500B4878F /* Main.storyboard */,
+				DF05867D1D220A6900B4878F /* Base */,
+				DF05867C1D220A5900B4878F /* ViewControllers */,
+				DF05867B1D220A4200B4878F /* Models */,
+				DF256BBC1D2221BE00BD24F0 /* Extensions */,
 				DF0586541D220A1500B4878F /* Assets.xcassets */,
-				DF0586561D220A1500B4878F /* LaunchScreen.storyboard */,
 				DF0586591D220A1500B4878F /* Info.plist */,
-				DF0586511D220A1500B4878F /* DayPlanner.xcdatamodeld */,
 			);
 			path = DayPlanner;
 			sourceTree = "<group>";
@@ -115,6 +150,8 @@
 			children = (
 				DF0586621D220A1600B4878F /* DayPlannerTests.swift */,
 				DF0586641D220A1600B4878F /* Info.plist */,
+				DF0586981D22124F00B4878F /* PriorityTest.swift */,
+				DF256BBA1D2220BB00BD24F0 /* ThoughtTest.swift */,
 			);
 			path = DayPlannerTests;
 			sourceTree = "<group>";
@@ -126,6 +163,55 @@
 				DF05866F1D220A1600B4878F /* Info.plist */,
 			);
 			path = DayPlannerUITests;
+			sourceTree = "<group>";
+		};
+		DF05867B1D220A4200B4878F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF0586511D220A1500B4878F /* DayPlanner.xcdatamodeld */,
+				DF0586961D22117100B4878F /* Priority.swift */,
+				DF05867E1D220F2800B4878F /* Thought+CoreDataProperties.swift */,
+				DF05867F1D220F2800B4878F /* Thought.swift */,
+				DF0586801D220F2800B4878F /* Day+CoreDataProperties.swift */,
+				DF0586811D220F2800B4878F /* Day.swift */,
+				DF0586821D220F2800B4878F /* Task+CoreDataProperties.swift */,
+				DF0586831D220F2800B4878F /* Task.swift */,
+				DF0586841D220F2800B4878F /* FocusSession+CoreDataProperties.swift */,
+				DF0586851D220F2800B4878F /* FocusSession.swift */,
+				DF0586861D220F2800B4878F /* Goal+CoreDataProperties.swift */,
+				DF0586871D220F2800B4878F /* Goal.swift */,
+				DF0586881D220F2800B4878F /* Retro+CoreDataProperties.swift */,
+				DF0586891D220F2800B4878F /* Retro.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DF05867C1D220A5900B4878F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF05864C1D220A1500B4878F /* ViewController.swift */,
+				DF256BB81D221D9300BD24F0 /* ContextAware.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DF05867D1D220A6900B4878F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DF05864A1D220A1500B4878F /* AppDelegate.swift */,
+				DF05864E1D220A1500B4878F /* Main.storyboard */,
+				DF0586561D220A1500B4878F /* LaunchScreen.storyboard */,
+				DF256BB61D221BF000BD24F0 /* CompilerHack.c */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		DF256BBC1D2221BE00BD24F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF256BBD1D2221ED00BD24F0 /* NSManagedObject+Planner.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +345,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF05868D1D220F2800B4878F /* Day.swift in Sources */,
+				DF0586901D220F2800B4878F /* FocusSession+CoreDataProperties.swift in Sources */,
+				DF0586921D220F2800B4878F /* Goal+CoreDataProperties.swift in Sources */,
+				DF256BB71D221BF000BD24F0 /* CompilerHack.c in Sources */,
 				DF05864D1D220A1500B4878F /* ViewController.swift in Sources */,
+				DF0586911D220F2800B4878F /* FocusSession.swift in Sources */,
+				DF05868B1D220F2800B4878F /* Thought.swift in Sources */,
+				DF0586941D220F2800B4878F /* Retro+CoreDataProperties.swift in Sources */,
+				DF05868C1D220F2800B4878F /* Day+CoreDataProperties.swift in Sources */,
 				DF0586531D220A1500B4878F /* DayPlanner.xcdatamodeld in Sources */,
+				DF0586931D220F2800B4878F /* Goal.swift in Sources */,
+				DF0586951D220F2800B4878F /* Retro.swift in Sources */,
+				DF256BB91D221D9300BD24F0 /* ContextAware.swift in Sources */,
+				DF0586971D22117100B4878F /* Priority.swift in Sources */,
+				DF05868A1D220F2800B4878F /* Thought+CoreDataProperties.swift in Sources */,
+				DF05868E1D220F2800B4878F /* Task+CoreDataProperties.swift in Sources */,
+				DF05868F1D220F2800B4878F /* Task.swift in Sources */,
+				DF256BBE1D2221ED00BD24F0 /* NSManagedObject+Planner.swift in Sources */,
 				DF05864B1D220A1500B4878F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +372,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0586631D220A1600B4878F /* DayPlannerTests.swift in Sources */,
+				DF0586991D22124F00B4878F /* PriorityTest.swift in Sources */,
+				DF256BBB1D2220BB00BD24F0 /* ThoughtTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,10 +509,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DayPlanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rlasante.DayPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -416,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DayPlanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rlasante.DayPlanner;
@@ -488,6 +595,7 @@
 				DF0586741D220A1600B4878F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF0586751D220A1600B4878F /* Build configuration list for PBXNativeTarget "DayPlannerTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +604,7 @@
 				DF0586771D220A1600B4878F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF0586781D220A1600B4878F /* Build configuration list for PBXNativeTarget "DayPlannerUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +613,7 @@
 				DF05867A1D220A1600B4878F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
