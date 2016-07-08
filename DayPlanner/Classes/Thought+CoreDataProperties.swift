@@ -12,7 +12,7 @@
 import Foundation
 import CoreData
 
-extension Thought {
+extension Thought: OnOptionalDay, OnOptionalRetro, OnOptionalFocusSession {
     @NSManaged var day: Day?
     @NSManaged var session: FocusSession?
     @NSManaged var retro: Retro?

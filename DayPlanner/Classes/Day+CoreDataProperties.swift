@@ -15,10 +15,10 @@ import CoreData
 extension Day {
     @NSManaged var date: NSDate
 
-    @NSManaged var focusSession: FocusSession
+    @NSManaged var focusSessions: Set<FocusSession>
     @NSManaged var tasks: Set<Task>
     @NSManaged var thoughts: Set<Thought>
     @NSManaged var goals: Set<Goal>
-    @NSManaged var retro: Retro
+    @NSManaged var retros: Set<Retro>
     
 }

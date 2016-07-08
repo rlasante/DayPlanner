@@ -10,8 +10,20 @@ import Foundation
 import CoreData
 
 
-class Retro: NSManagedObject {
+class Retro: NSManagedObject, SubContent, ThoughtFactory {
 
-// Insert code here to add functionality to your managed object subclass
+}
 
+extension Retro: ParentConvertable {
+    func parentWrapper() -> Parent {
+        return .retro(retro: self)
+    }
+}
+
+protocol OnRetro {
+    var retro: Retro { get set }
+}
+
+protocol OnOptionalRetro {
+    var retro: Retro? { get set }
 }

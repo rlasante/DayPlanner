@@ -12,29 +12,35 @@ import CoreData
 
 
 class ThoughtTest: XCTestCase {
-    var context: NSManagedObjectContext!
 
-    override func setUp() {
-        super.setUp()
-        context = AppDelegate.sharedAppDelegate.managedObjectContext
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    let defaultText = "This is a test thought"
 
     func testBasicCreation() {
-        let testText = "This is a test thought"
         let thought: Thought = Thought(on: context)
-        thought.text = testText
+        thought.text = defaultText
 
-        XCTAssertEqual(thought.text, testText)
+        XCTAssertEqual(thought.text, defaultText)
     }
 
     func testDayCreation() {
-        let day = Day(with: NSDate(), on: context)
-        let testText = "This is a test thought"
-        let thought: Thought = Thought(with: testText, on: day, on: context)
-        XCTAssertEqual(thought.text, testText)
+        let day = Day(on: context, with: NSDate())
+        let thought: Thought = Thought(on: context, on: day, with: defaultText)
+        XCTAssertEqual(thought.text, defaultText)
         XCTAssertEqual(thought.day, day)
+        XCTAssertNil(thought.retro)
+        XCTAssertNil(thought.session)
 
         context.deleteObject(day)
+    }
+
+    func testSessionCreation() {
+        let session = FocusSession(on: context)
+        let thought = Thought(on: context, on: session, with: defaultText)
+        XCTAssertEqual(thought.text, defaultText)
+        XCTAssertEqual(thought.session, session)
+        XCTAssertNil(thought.retro)
+        XCTAssertNil(thought.day)
+
+        context.deleteObject(session)
     }
 }

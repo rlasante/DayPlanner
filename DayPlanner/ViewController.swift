@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController, ContextAware {
+class ViewController: UIViewController, ContextConfigurable {
     var context: NSManagedObjectContext!
 
     required init?(coder aDecoder: NSCoder) {

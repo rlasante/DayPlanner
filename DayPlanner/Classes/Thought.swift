@@ -10,30 +10,59 @@ import Foundation
 import CoreData
 
 
-class Thought: NSManagedObject {
+class Thought: NSManagedObject, SubContent {
 
-
-
-    convenience init(with text: String, on day: Day, on context: NSManagedObjectContext) {
-        self.init(with: text, on: context)
-        self.day = day
-    }
-
-    convenience init(with text: String, in retro: Retro, on context: NSManagedObjectContext) {
-        self.init(with: text, on: context)
-        self.retro = retro
-    }
-
-    convenience init(with text: String, during focusSession: FocusSession, on context: NSManagedObjectContext) {
-        self.init(with: text, on: context)
-        self.session = focusSession
-    }
-
-    private convenience init(with text: String, on context: NSManagedObjectContext) {
-        self.init(on: context)
+    convenience init(on context: NSManagedObjectContext, on parent: Parent, with text: String) {
+        self.init(on: context, on: parent)
         self.text = text
     }
 
-// Insert code here to add functionality to your managed object subclass
+    convenience init(on context: NSManagedObjectContext, on parent: ParentConvertable, with text: String) {
+        self.init(on: context, on: parent.parentWrapper(), with: text)
+    }
+}
 
+protocol ThoughtFactory {}
+extension ThoughtFactory {
+    static func createThoughts(on context: NSManagedObjectContext, on parent: Parent, texts: String ...) -> [Thought] {
+        return createThoughts(on: context, on: parent, texts: texts)
+    }
+
+    static func createThoughts(on context: NSManagedObjectContext, on parent: Parent, texts: [String]) -> [Thought] {
+        var thoughts: [Thought] = []
+        for text in texts {
+            thoughts.append(Thought(on: context, on: parent, with: text))
+        }
+        return thoughts
+    }
+}
+
+extension ThoughtFactory where Self: ContextAware {
+    func createThoughts(on parent: Parent, texts: String ...) -> [Thought] {
+        return createThoughts(on: parent, texts: texts)
+    }
+
+    func createThoughts(on parent: Parent, texts: [String]) -> [Thought] {
+        return Self.createThoughts(on: context, on: parent, texts: texts)
+    }
+}
+
+extension ThoughtFactory where Self: ParentConvertable {
+    func createThoughts(on context: NSManagedObjectContext, texts: String ...) -> [Thought] {
+        return createThoughts(on: context, texts: texts)
+    }
+
+    func createThoughts(on context: NSManagedObjectContext, texts: [String]) -> [Thought] {
+        return Self.createThoughts(on: context, on: self.parentWrapper(), texts: texts)
+    }
+}
+
+extension ThoughtFactory where Self: ParentConvertable, Self: ContextAware {
+    func createThoughts(texts: String ...) -> [Thought] {
+        return createThoughts(on: context, texts: texts)
+    }
+
+    func createThoughts(texts: [String]) -> [Thought] {
+        return Self.createThoughts(on: context, on: self.parentWrapper(), texts: texts)
+    }
 }

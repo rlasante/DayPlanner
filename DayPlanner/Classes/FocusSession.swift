@@ -10,8 +10,20 @@ import Foundation
 import CoreData
 
 
-class FocusSession: NSManagedObject {
+class FocusSession: NSManagedObject, SubContent, ThoughtFactory, GoalFactory {
 
-// Insert code here to add functionality to your managed object subclass
+}
 
+extension FocusSession: ParentConvertable {
+    func parentWrapper() -> Parent {
+        return .focusSession(session: self)
+    }
+}
+
+protocol OnFocusSession {
+    var session: FocusSession { get set }
+}
+
+protocol OnOptionalFocusSession {
+    var session: FocusSession? { get set }
 }

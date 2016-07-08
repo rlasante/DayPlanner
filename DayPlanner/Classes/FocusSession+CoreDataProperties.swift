@@ -12,7 +12,7 @@
 import Foundation
 import CoreData
 
-extension FocusSession {
+extension FocusSession: OnDay {
     @NSManaged var day: Day
 
     @NSManaged var goals: Set<Goal>

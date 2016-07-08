@@ -10,11 +10,15 @@ import UIKit
 import CoreData
 
 protocol ContextAware {
+    var context: NSManagedObjectContext! { get }
+}
+
+protocol ContextConfigurable: ContextAware {
     var context: NSManagedObjectContext! { get set }
     mutating func prepare(with context: NSManagedObjectContext)
 }
 
-extension ContextAware {
+extension ContextConfigurable {
     mutating func prepare(with context: NSManagedObjectContext) {
         self.context = context
     }

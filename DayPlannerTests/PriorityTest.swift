@@ -9,8 +9,6 @@
 import XCTest
 @testable import DayPlanner
 
-
-
 class PriorityTest: XCTestCase {
 
     func testInvalidString() {

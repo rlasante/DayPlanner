@@ -12,7 +12,7 @@
 import Foundation
 import CoreData
 
-extension Retro {
+extension Retro: OnDay {
     @NSManaged var day: Day
 
     @NSManaged var thoughts: Set<Thought>

@@ -12,7 +12,7 @@
 import Foundation
 import CoreData
 
-extension Task {
+extension Task: OnDay {
     @NSManaged var day: Day
 
     @NSManaged var text: String

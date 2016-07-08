@@ -28,3 +28,12 @@ extension NSManagedObject {
         self.init(entity: entity, insertIntoManagedObjectContext: managedObjectContext)
     }
 }
+
+extension NSManagedObject: ContextAware {
+    var context: NSManagedObjectContext! {
+        get {
+            assert(self.managedObjectContext != nil, "Managed Object needs a context")
+            return self.managedObjectContext
+        }
+    }
+}

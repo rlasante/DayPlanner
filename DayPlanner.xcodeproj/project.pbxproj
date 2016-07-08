@@ -13,7 +13,6 @@
 		DF0586531D220A1500B4878F /* DayPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF0586511D220A1500B4878F /* DayPlanner.xcdatamodeld */; };
 		DF0586551D220A1500B4878F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0586541D220A1500B4878F /* Assets.xcassets */; };
 		DF0586581D220A1500B4878F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0586561D220A1500B4878F /* LaunchScreen.storyboard */; };
-		DF0586631D220A1600B4878F /* DayPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586621D220A1600B4878F /* DayPlannerTests.swift */; };
 		DF05866E1D220A1600B4878F /* DayPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05866D1D220A1600B4878F /* DayPlannerUITests.swift */; };
 		DF05868A1D220F2800B4878F /* Thought+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05867E1D220F2800B4878F /* Thought+CoreDataProperties.swift */; };
 		DF05868B1D220F2800B4878F /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05867F1D220F2800B4878F /* Thought.swift */; };
@@ -29,7 +28,14 @@
 		DF0586951D220F2800B4878F /* Retro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586891D220F2800B4878F /* Retro.swift */; };
 		DF0586971D22117100B4878F /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586961D22117100B4878F /* Priority.swift */; };
 		DF0586991D22124F00B4878F /* PriorityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0586981D22124F00B4878F /* PriorityTest.swift */; };
-		DF256BB71D221BF000BD24F0 /* CompilerHack.c in Sources */ = {isa = PBXBuildFile; fileRef = DF256BB61D221BF000BD24F0 /* CompilerHack.c */; };
+		DF0DA99F1D236D8B008A40BB /* RetroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA99E1D236D8B008A40BB /* RetroTests.swift */; };
+		DF0DA9A21D236DEC008A40BB /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9A11D236DEC008A40BB /* XCTestCase+Extensions.swift */; };
+		DF0DA9A71D280B35008A40BB /* GoalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9A61D280B35008A40BB /* GoalTests.swift */; };
+		DF0DA9A91D280CFB008A40BB /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9A81D280CFB008A40BB /* TaskTests.swift */; };
+		DF0DA9AC1D28548C008A40BB /* SubContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9AB1D28548C008A40BB /* SubContent.swift */; };
+		DF0DA9AE1D2DFC71008A40BB /* FocusSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9AD1D2DFC71008A40BB /* FocusSessionTests.swift */; };
+		DF0DA9B01D2E0372008A40BB /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9AF1D2E0372008A40BB /* Factory.swift */; };
+		DF0DA9B21D2F4B7C008A40BB /* DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9B11D2F4B7C008A40BB /* DayTests.swift */; };
 		DF256BB91D221D9300BD24F0 /* ContextAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BB81D221D9300BD24F0 /* ContextAware.swift */; };
 		DF256BBB1D2220BB00BD24F0 /* ThoughtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BBA1D2220BB00BD24F0 /* ThoughtTest.swift */; };
 		DF256BBE1D2221ED00BD24F0 /* NSManagedObject+Planner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BBD1D2221ED00BD24F0 /* NSManagedObject+Planner.swift */; };
@@ -62,7 +68,6 @@
 		DF0586571D220A1500B4878F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF0586591D220A1500B4878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF05865E1D220A1600B4878F /* DayPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF0586621D220A1600B4878F /* DayPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerTests.swift; sourceTree = "<group>"; };
 		DF0586641D220A1600B4878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF0586691D220A1600B4878F /* DayPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF05866D1D220A1600B4878F /* DayPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerUITests.swift; sourceTree = "<group>"; };
@@ -81,7 +86,14 @@
 		DF0586891D220F2800B4878F /* Retro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Retro.swift; path = Classes/Retro.swift; sourceTree = "<group>"; };
 		DF0586961D22117100B4878F /* Priority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Classes/Priority.swift; sourceTree = "<group>"; };
 		DF0586981D22124F00B4878F /* PriorityTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityTest.swift; sourceTree = "<group>"; };
-		DF256BB61D221BF000BD24F0 /* CompilerHack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CompilerHack.c; sourceTree = "<group>"; };
+		DF0DA99E1D236D8B008A40BB /* RetroTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetroTests.swift; sourceTree = "<group>"; };
+		DF0DA9A11D236DEC008A40BB /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		DF0DA9A61D280B35008A40BB /* GoalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalTests.swift; sourceTree = "<group>"; };
+		DF0DA9A81D280CFB008A40BB /* TaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
+		DF0DA9AB1D28548C008A40BB /* SubContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubContent.swift; path = Classes/SubContent.swift; sourceTree = "<group>"; };
+		DF0DA9AD1D2DFC71008A40BB /* FocusSessionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSessionTests.swift; sourceTree = "<group>"; };
+		DF0DA9AF1D2E0372008A40BB /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Factory.swift; path = Classes/Factory.swift; sourceTree = "<group>"; };
+		DF0DA9B11D2F4B7C008A40BB /* DayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTests.swift; sourceTree = "<group>"; };
 		DF256BB81D221D9300BD24F0 /* ContextAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextAware.swift; path = Classes/ContextAware.swift; sourceTree = "<group>"; };
 		DF256BBA1D2220BB00BD24F0 /* ThoughtTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtTest.swift; sourceTree = "<group>"; };
 		DF256BBD1D2221ED00BD24F0 /* NSManagedObject+Planner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Planner.swift"; path = "Classes/NSManagedObject+Planner.swift"; sourceTree = "<group>"; };
@@ -148,9 +160,14 @@
 		DF0586611D220A1600B4878F /* DayPlannerTests */ = {
 			isa = PBXGroup;
 			children = (
-				DF0586621D220A1600B4878F /* DayPlannerTests.swift */,
+				DF0DA9A01D236DBD008A40BB /* Extensions */,
 				DF0586641D220A1600B4878F /* Info.plist */,
+				DF0DA9B11D2F4B7C008A40BB /* DayTests.swift */,
+				DF0DA9AD1D2DFC71008A40BB /* FocusSessionTests.swift */,
+				DF0DA9A61D280B35008A40BB /* GoalTests.swift */,
 				DF0586981D22124F00B4878F /* PriorityTest.swift */,
+				DF0DA99E1D236D8B008A40BB /* RetroTests.swift */,
+				DF0DA9A81D280CFB008A40BB /* TaskTests.swift */,
 				DF256BBA1D2220BB00BD24F0 /* ThoughtTest.swift */,
 			);
 			path = DayPlannerTests;
@@ -168,20 +185,20 @@
 		DF05867B1D220A4200B4878F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DF0DA9AA1D285318008A40BB /* Helpers */,
 				DF0586511D220A1500B4878F /* DayPlanner.xcdatamodeld */,
-				DF0586961D22117100B4878F /* Priority.swift */,
-				DF05867E1D220F2800B4878F /* Thought+CoreDataProperties.swift */,
-				DF05867F1D220F2800B4878F /* Thought.swift */,
 				DF0586801D220F2800B4878F /* Day+CoreDataProperties.swift */,
 				DF0586811D220F2800B4878F /* Day.swift */,
-				DF0586821D220F2800B4878F /* Task+CoreDataProperties.swift */,
-				DF0586831D220F2800B4878F /* Task.swift */,
-				DF0586841D220F2800B4878F /* FocusSession+CoreDataProperties.swift */,
-				DF0586851D220F2800B4878F /* FocusSession.swift */,
 				DF0586861D220F2800B4878F /* Goal+CoreDataProperties.swift */,
 				DF0586871D220F2800B4878F /* Goal.swift */,
+				DF0586841D220F2800B4878F /* FocusSession+CoreDataProperties.swift */,
+				DF0586851D220F2800B4878F /* FocusSession.swift */,
 				DF0586881D220F2800B4878F /* Retro+CoreDataProperties.swift */,
 				DF0586891D220F2800B4878F /* Retro.swift */,
+				DF0586821D220F2800B4878F /* Task+CoreDataProperties.swift */,
+				DF0586831D220F2800B4878F /* Task.swift */,
+				DF05867E1D220F2800B4878F /* Thought+CoreDataProperties.swift */,
+				DF05867F1D220F2800B4878F /* Thought.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -201,9 +218,26 @@
 				DF05864A1D220A1500B4878F /* AppDelegate.swift */,
 				DF05864E1D220A1500B4878F /* Main.storyboard */,
 				DF0586561D220A1500B4878F /* LaunchScreen.storyboard */,
-				DF256BB61D221BF000BD24F0 /* CompilerHack.c */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		DF0DA9A01D236DBD008A40BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF0DA9A11D236DEC008A40BB /* XCTestCase+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		DF0DA9AA1D285318008A40BB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DF0586961D22117100B4878F /* Priority.swift */,
+				DF0DA9AB1D28548C008A40BB /* SubContent.swift */,
+				DF0DA9AF1D2E0372008A40BB /* Factory.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		DF256BBC1D2221BE00BD24F0 /* Extensions */ = {
@@ -348,7 +382,8 @@
 				DF05868D1D220F2800B4878F /* Day.swift in Sources */,
 				DF0586901D220F2800B4878F /* FocusSession+CoreDataProperties.swift in Sources */,
 				DF0586921D220F2800B4878F /* Goal+CoreDataProperties.swift in Sources */,
-				DF256BB71D221BF000BD24F0 /* CompilerHack.c in Sources */,
+				DF0DA9AC1D28548C008A40BB /* SubContent.swift in Sources */,
+				DF0DA9B01D2E0372008A40BB /* Factory.swift in Sources */,
 				DF05864D1D220A1500B4878F /* ViewController.swift in Sources */,
 				DF0586911D220F2800B4878F /* FocusSession.swift in Sources */,
 				DF05868B1D220F2800B4878F /* Thought.swift in Sources */,
@@ -371,8 +406,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF0586631D220A1600B4878F /* DayPlannerTests.swift in Sources */,
+				DF0DA9AE1D2DFC71008A40BB /* FocusSessionTests.swift in Sources */,
+				DF0DA9A91D280CFB008A40BB /* TaskTests.swift in Sources */,
 				DF0586991D22124F00B4878F /* PriorityTest.swift in Sources */,
+				DF0DA9A21D236DEC008A40BB /* XCTestCase+Extensions.swift in Sources */,
+				DF0DA99F1D236D8B008A40BB /* RetroTests.swift in Sources */,
+				DF0DA9B21D2F4B7C008A40BB /* DayTests.swift in Sources */,
+				DF0DA9A71D280B35008A40BB /* GoalTests.swift in Sources */,
 				DF256BBB1D2220BB00BD24F0 /* ThoughtTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
