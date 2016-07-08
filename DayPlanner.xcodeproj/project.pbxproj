@@ -34,7 +34,6 @@
 		DF0DA9A91D280CFB008A40BB /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9A81D280CFB008A40BB /* TaskTests.swift */; };
 		DF0DA9AC1D28548C008A40BB /* SubContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9AB1D28548C008A40BB /* SubContent.swift */; };
 		DF0DA9AE1D2DFC71008A40BB /* FocusSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9AD1D2DFC71008A40BB /* FocusSessionTests.swift */; };
-		DF0DA9B01D2E0372008A40BB /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9AF1D2E0372008A40BB /* Factory.swift */; };
 		DF0DA9B21D2F4B7C008A40BB /* DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9B11D2F4B7C008A40BB /* DayTests.swift */; };
 		DF256BB91D221D9300BD24F0 /* ContextAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BB81D221D9300BD24F0 /* ContextAware.swift */; };
 		DF256BBB1D2220BB00BD24F0 /* ThoughtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BBA1D2220BB00BD24F0 /* ThoughtTest.swift */; };
@@ -92,7 +91,6 @@
 		DF0DA9A81D280CFB008A40BB /* TaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
 		DF0DA9AB1D28548C008A40BB /* SubContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubContent.swift; path = Classes/SubContent.swift; sourceTree = "<group>"; };
 		DF0DA9AD1D2DFC71008A40BB /* FocusSessionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSessionTests.swift; sourceTree = "<group>"; };
-		DF0DA9AF1D2E0372008A40BB /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Factory.swift; path = Classes/Factory.swift; sourceTree = "<group>"; };
 		DF0DA9B11D2F4B7C008A40BB /* DayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTests.swift; sourceTree = "<group>"; };
 		DF256BB81D221D9300BD24F0 /* ContextAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextAware.swift; path = Classes/ContextAware.swift; sourceTree = "<group>"; };
 		DF256BBA1D2220BB00BD24F0 /* ThoughtTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtTest.swift; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 			children = (
 				DF0586961D22117100B4878F /* Priority.swift */,
 				DF0DA9AB1D28548C008A40BB /* SubContent.swift */,
-				DF0DA9AF1D2E0372008A40BB /* Factory.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -383,7 +380,6 @@
 				DF0586901D220F2800B4878F /* FocusSession+CoreDataProperties.swift in Sources */,
 				DF0586921D220F2800B4878F /* Goal+CoreDataProperties.swift in Sources */,
 				DF0DA9AC1D28548C008A40BB /* SubContent.swift in Sources */,
-				DF0DA9B01D2E0372008A40BB /* Factory.swift in Sources */,
 				DF05864D1D220A1500B4878F /* ViewController.swift in Sources */,
 				DF0586911D220F2800B4878F /* FocusSession.swift in Sources */,
 				DF05868B1D220F2800B4878F /* Thought.swift in Sources */,
