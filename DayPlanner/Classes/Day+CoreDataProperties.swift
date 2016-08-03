@@ -13,7 +13,7 @@ import Foundation
 import CoreData
 
 extension Day {
-    @NSManaged var date: NSDate
+    @NSManaged var dayString: String
 
     @NSManaged var focusSessions: Set<FocusSession>
     @NSManaged var tasks: Set<Task>

@@ -47,4 +47,32 @@ class DayTests: XCTestCase {
         XCTAssertEqual(goal?.day, day)
     }
 
+    func testDayFetch() {
+        do {
+            context.deleteObject(self.day)
+            self.day = nil
+            guard let date = NSDate().dayDateComponents().date else { XCTFail("Failed to create the today date"); return }
+            let invalidDay = try context.executeFetchRequest(Day.fetchRequest(for: date)).first as? Day
+            XCTAssertNil(invalidDay, "The day hasn't been created so the fetch should fail")
+            let _ = Day(on: context, with: date)
+            let day = try context.executeFetchRequest(Day.fetchRequest(for: date)).first as? Day
+            XCTAssertNotNil(day)
+            XCTAssertEqual(day?.date, date)
+        } catch {
+            XCTFail("Failed to get request")
+        }
+    }
+
+    func testDeleteGoals() {
+        guard let goal = day.createGoals("Test").first else {
+            XCTFail("Failed to create a goal")
+            return
+        }
+        XCTAssertEqual(day.goals.count, 1)
+
+        day.goals.remove(goal)
+        context.deleteObject(goal)
+        XCTAssertEqual(day.goals.count, 0)
+    }
+
 }

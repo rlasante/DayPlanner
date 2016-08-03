@@ -12,6 +12,19 @@ import CoreData
 
 class Day: NSManagedObject, TaskFactory, ThoughtFactory, GoalFactory {
 
+    var date: NSDate {
+        set {
+            dayString = newValue.dayDateString()
+        }
+        get {
+            guard let date = NSDate(withDayString: dayString) else {
+                assertionFailure("Failed to parse the dayString on Day object")
+                abort()
+            }
+            return date
+        }
+    }
+
     convenience init(on context: NSManagedObjectContext, with date: NSDate) {
         self.init(on: context)
         self.date = date
@@ -23,6 +36,12 @@ class Day: NSManagedObject, TaskFactory, ThoughtFactory, GoalFactory {
 
     func createRetro() -> Retro {
         return Retro(on: context, on: self)
+    }
+
+    class func fetchRequest(for date: NSDate) -> NSFetchRequest {
+        let request = NSFetchRequest(entityName: "Day")
+        request.predicate = NSPredicate(format: "dayString = %@", date.dayDateString())
+        return request
     }
 }
 

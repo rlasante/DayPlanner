@@ -16,10 +16,17 @@ class Goal: NSManagedObject, PriorityData, SubContent {
         self.init(on: context, on: parent)
         self.priority = priority
         self.text = text
+        self.creationDate = NSDate()
     }
 
     convenience init(on context: NSManagedObjectContext, on parent: ParentConvertable, with text: String, with priority: Priority = .low) {
         self.init(on: context, on: parent.parentWrapper(), with: text, with: priority)
+    }
+
+    class func fetchRequest(for date: NSDate) -> NSFetchRequest {
+        let request = NSFetchRequest(entityName: "Goal")
+        request.predicate = NSPredicate(format: "day.dayString = %@", date.dayDateString())
+        return request
     }
     
 }

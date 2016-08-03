@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Automatic">
     <entity name="Day" representedClassName=".Day" syncable="YES">
-        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="dayString" attributeType="String" syncable="YES"/>
         <relationship name="focusSessions" toMany="YES" deletionRule="Cascade" destinationEntity="FocusSession" inverseName="day" inverseEntity="FocusSession" syncable="YES"/>
         <relationship name="goals" toMany="YES" deletionRule="Cascade" destinationEntity="Goal" inverseName="day" inverseEntity="Goal" syncable="YES"/>
         <relationship name="retros" toMany="YES" deletionRule="Cascade" destinationEntity="Retro" inverseName="day" inverseEntity="Retro" syncable="YES"/>
@@ -15,6 +15,7 @@
         <relationship name="thoughts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Thought" inverseName="session" inverseEntity="Thought" syncable="YES"/>
     </entity>
     <entity name="Goal" representedClassName=".Goal" syncable="YES">
+        <attribute name="creationDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="priorityString" attributeType="String" defaultValueString="low" syncable="YES"/>
         <attribute name="text" attributeType="String" syncable="YES"/>
         <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="goals" inverseEntity="Day" syncable="YES"/>
@@ -39,7 +40,7 @@
     <elements>
         <element name="Day" positionX="-63" positionY="-18" width="128" height="135"/>
         <element name="FocusSession" positionX="-27" positionY="54" width="128" height="105"/>
-        <element name="Goal" positionX="-18" positionY="63" width="128" height="105"/>
+        <element name="Goal" positionX="-18" positionY="63" width="128" height="120"/>
         <element name="Retro" positionX="0" positionY="108" width="128" height="75"/>
         <element name="Task" positionX="-54" positionY="0" width="128" height="105"/>
         <element name="Thought" positionX="-36" positionY="45" width="128" height="105"/>

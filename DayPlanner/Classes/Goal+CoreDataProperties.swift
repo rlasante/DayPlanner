@@ -18,4 +18,5 @@ extension Goal: OnOptionalDay, OnOptionalFocusSession {
 
     @NSManaged var text: String
     @NSManaged var priorityString: String
+    @NSManaged var creationDate: NSDate
 }

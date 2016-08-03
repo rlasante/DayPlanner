@@ -70,4 +70,26 @@ class GoalTests: XCTestCase {
         XCTAssertEqual(goal.priority, expectedPriority)
     }
 
+    func testDateFetchRequest() {
+        do {
+            let date = NSDate()
+            let day = Day(on: context, with: date)
+            let expectedGoals = day.createGoals("Test1", "Test2", "Test3")
+
+            let fetchedObjects = try context.executeFetchRequest(Goal.fetchRequest(for:date))
+            guard let fetchedGoals = fetchedObjects as? [Goal] else {
+                XCTFail("No goals were fetched")
+                return
+            }
+            XCTAssertEqual(fetchedGoals.count, expectedGoals.count)
+
+            for goal in fetchedGoals {
+                XCTAssertTrue(expectedGoals.contains(goal))
+            }
+
+        } catch {
+            XCTFail("Failed to fetch the goals")
+        }
+    }
+
 }

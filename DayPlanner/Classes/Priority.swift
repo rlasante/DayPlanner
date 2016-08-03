@@ -25,6 +25,21 @@ enum Priority: String {
     }
 }
 
+extension Priority: Comparable {}
+
+func <(x: Priority, y: Priority) -> Bool {
+    switch x {
+    case .low:
+        return y != .low
+    case .medium:
+        return y == .high || y == .extreme
+    case .high:
+        return y == .extreme
+    case .extreme:
+        return false
+    }
+}
+
 @objc protocol PriorityData {
     var priorityString: String { get set }
 }

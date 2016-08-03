@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DF05864B1D220A1500B4878F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05864A1D220A1500B4878F /* AppDelegate.swift */; };
-		DF05864D1D220A1500B4878F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05864C1D220A1500B4878F /* ViewController.swift */; };
+		DF05864D1D220A1500B4878F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05864C1D220A1500B4878F /* HomeViewController.swift */; };
 		DF0586501D220A1500B4878F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF05864E1D220A1500B4878F /* Main.storyboard */; };
 		DF0586531D220A1500B4878F /* DayPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF0586511D220A1500B4878F /* DayPlanner.xcdatamodeld */; };
 		DF0586551D220A1500B4878F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0586541D220A1500B4878F /* Assets.xcassets */; };
-		DF0586581D220A1500B4878F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0586561D220A1500B4878F /* LaunchScreen.storyboard */; };
 		DF05866E1D220A1600B4878F /* DayPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05866D1D220A1600B4878F /* DayPlannerUITests.swift */; };
 		DF05868A1D220F2800B4878F /* Thought+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05867E1D220F2800B4878F /* Thought+CoreDataProperties.swift */; };
 		DF05868B1D220F2800B4878F /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05867F1D220F2800B4878F /* Thought.swift */; };
@@ -35,6 +34,17 @@
 		DF0DA9AC1D28548C008A40BB /* SubContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9AB1D28548C008A40BB /* SubContent.swift */; };
 		DF0DA9AE1D2DFC71008A40BB /* FocusSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9AD1D2DFC71008A40BB /* FocusSessionTests.swift */; };
 		DF0DA9B21D2F4B7C008A40BB /* DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9B11D2F4B7C008A40BB /* DayTests.swift */; };
+		DF0DA9B41D2F4F88008A40BB /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9B31D2F4F88008A40BB /* DayViewController.swift */; };
+		DF0DA9B61D2F4FB8008A40BB /* RetroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9B51D2F4FB8008A40BB /* RetroViewController.swift */; };
+		DF0DA9BA1D2F4FE9008A40BB /* FocusSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9B91D2F4FE9008A40BB /* FocusSessionViewController.swift */; };
+		DF0DA9C31D3168A0008A40BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0DA9C11D3168A0008A40BB /* LaunchScreen.storyboard */; };
+		DF0DA9C51D316914008A40BB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9C41D316914008A40BB /* WelcomeViewController.swift */; };
+		DF0DA9C71D317A35008A40BB /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9C61D317A35008A40BB /* GoalsViewController.swift */; };
+		DF0DA9CB1D317E32008A40BB /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9CA1D317E32008A40BB /* GoalTableViewCell.swift */; };
+		DF0DA9CD1D32A87F008A40BB /* Dispatch+Planner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9CC1D32A87F008A40BB /* Dispatch+Planner.swift */; };
+		DF0DA9CF1D32AF10008A40BB /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9CE1D32AF10008A40BB /* UIView+Animations.swift */; };
+		DF19BB3E1D39DE020013F546 /* DayPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF19BB3D1D39DE020013F546 /* DayPageViewController.swift */; };
+		DF19BB401D3C4DB80013F546 /* NSDate+Planner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF19BB3F1D3C4DB80013F546 /* NSDate+Planner.swift */; };
 		DF256BB91D221D9300BD24F0 /* ContextAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BB81D221D9300BD24F0 /* ContextAware.swift */; };
 		DF256BBB1D2220BB00BD24F0 /* ThoughtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BBA1D2220BB00BD24F0 /* ThoughtTest.swift */; };
 		DF256BBE1D2221ED00BD24F0 /* NSManagedObject+Planner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BBD1D2221ED00BD24F0 /* NSManagedObject+Planner.swift */; };
@@ -60,11 +70,10 @@
 /* Begin PBXFileReference section */
 		DF0586471D220A1500B4878F /* DayPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF05864A1D220A1500B4878F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF05864C1D220A1500B4878F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF05864C1D220A1500B4878F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DF05864F1D220A1500B4878F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF0586521D220A1500B4878F /* DayPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DayPlanner.xcdatamodel; sourceTree = "<group>"; };
 		DF0586541D220A1500B4878F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DF0586571D220A1500B4878F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF0586591D220A1500B4878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF05865E1D220A1600B4878F /* DayPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0586641D220A1600B4878F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +101,17 @@
 		DF0DA9AB1D28548C008A40BB /* SubContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubContent.swift; path = Classes/SubContent.swift; sourceTree = "<group>"; };
 		DF0DA9AD1D2DFC71008A40BB /* FocusSessionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSessionTests.swift; sourceTree = "<group>"; };
 		DF0DA9B11D2F4B7C008A40BB /* DayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTests.swift; sourceTree = "<group>"; };
+		DF0DA9B31D2F4F88008A40BB /* DayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayViewController.swift; path = Classes/DayViewController.swift; sourceTree = "<group>"; };
+		DF0DA9B51D2F4FB8008A40BB /* RetroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RetroViewController.swift; path = Classes/RetroViewController.swift; sourceTree = "<group>"; };
+		DF0DA9B91D2F4FE9008A40BB /* FocusSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FocusSessionViewController.swift; path = Classes/FocusSessionViewController.swift; sourceTree = "<group>"; };
+		DF0DA9C21D3168A0008A40BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF0DA9C41D316914008A40BB /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = Classes/WelcomeViewController.swift; sourceTree = "<group>"; };
+		DF0DA9C61D317A35008A40BB /* GoalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalsViewController.swift; path = Classes/GoalsViewController.swift; sourceTree = "<group>"; };
+		DF0DA9CA1D317E32008A40BB /* GoalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalTableViewCell.swift; path = Classes/GoalTableViewCell.swift; sourceTree = "<group>"; };
+		DF0DA9CC1D32A87F008A40BB /* Dispatch+Planner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Dispatch+Planner.swift"; path = "Classes/Dispatch+Planner.swift"; sourceTree = "<group>"; };
+		DF0DA9CE1D32AF10008A40BB /* UIView+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
+		DF19BB3D1D39DE020013F546 /* DayPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayPageViewController.swift; path = Classes/DayPageViewController.swift; sourceTree = "<group>"; };
+		DF19BB3F1D3C4DB80013F546 /* NSDate+Planner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Planner.swift"; path = "Classes/NSDate+Planner.swift"; sourceTree = "<group>"; };
 		DF256BB81D221D9300BD24F0 /* ContextAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextAware.swift; path = Classes/ContextAware.swift; sourceTree = "<group>"; };
 		DF256BBA1D2220BB00BD24F0 /* ThoughtTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtTest.swift; sourceTree = "<group>"; };
 		DF256BBD1D2221ED00BD24F0 /* NSManagedObject+Planner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Planner.swift"; path = "Classes/NSManagedObject+Planner.swift"; sourceTree = "<group>"; };
@@ -204,8 +224,14 @@
 		DF05867C1D220A5900B4878F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				DF05864C1D220A1500B4878F /* ViewController.swift */,
+				DF0DA9C91D317E0B008A40BB /* Goals */,
+				DF05864C1D220A1500B4878F /* HomeViewController.swift */,
 				DF256BB81D221D9300BD24F0 /* ContextAware.swift */,
+				DF0DA9B31D2F4F88008A40BB /* DayViewController.swift */,
+				DF0DA9B51D2F4FB8008A40BB /* RetroViewController.swift */,
+				DF0DA9B91D2F4FE9008A40BB /* FocusSessionViewController.swift */,
+				DF0DA9C41D316914008A40BB /* WelcomeViewController.swift */,
+				DF19BB3D1D39DE020013F546 /* DayPageViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -213,9 +239,9 @@
 		DF05867D1D220A6900B4878F /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				DF0DA9C11D3168A0008A40BB /* LaunchScreen.storyboard */,
 				DF05864A1D220A1500B4878F /* AppDelegate.swift */,
 				DF05864E1D220A1500B4878F /* Main.storyboard */,
-				DF0586561D220A1500B4878F /* LaunchScreen.storyboard */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -237,10 +263,22 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		DF0DA9C91D317E0B008A40BB /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				DF0DA9CA1D317E32008A40BB /* GoalTableViewCell.swift */,
+				DF0DA9C61D317A35008A40BB /* GoalsViewController.swift */,
+			);
+			name = Goals;
+			sourceTree = "<group>";
+		};
 		DF256BBC1D2221BE00BD24F0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				DF256BBD1D2221ED00BD24F0 /* NSManagedObject+Planner.swift */,
+				DF0DA9CC1D32A87F008A40BB /* Dispatch+Planner.swift */,
+				DF0DA9CE1D32AF10008A40BB /* UIView+Animations.swift */,
+				DF19BB3F1D3C4DB80013F546 /* NSDate+Planner.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -349,8 +387,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF0586581D220A1500B4878F /* LaunchScreen.storyboard in Resources */,
 				DF0586551D220A1500B4878F /* Assets.xcassets in Resources */,
+				DF0DA9C31D3168A0008A40BB /* LaunchScreen.storyboard in Resources */,
 				DF0586501D220A1500B4878F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,25 +414,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF19BB3E1D39DE020013F546 /* DayPageViewController.swift in Sources */,
 				DF05868D1D220F2800B4878F /* Day.swift in Sources */,
 				DF0586901D220F2800B4878F /* FocusSession+CoreDataProperties.swift in Sources */,
 				DF0586921D220F2800B4878F /* Goal+CoreDataProperties.swift in Sources */,
+				DF0DA9CB1D317E32008A40BB /* GoalTableViewCell.swift in Sources */,
 				DF0DA9AC1D28548C008A40BB /* SubContent.swift in Sources */,
-				DF05864D1D220A1500B4878F /* ViewController.swift in Sources */,
+				DF05864D1D220A1500B4878F /* HomeViewController.swift in Sources */,
+				DF0DA9C51D316914008A40BB /* WelcomeViewController.swift in Sources */,
 				DF0586911D220F2800B4878F /* FocusSession.swift in Sources */,
 				DF05868B1D220F2800B4878F /* Thought.swift in Sources */,
 				DF0586941D220F2800B4878F /* Retro+CoreDataProperties.swift in Sources */,
 				DF05868C1D220F2800B4878F /* Day+CoreDataProperties.swift in Sources */,
+				DF0DA9CF1D32AF10008A40BB /* UIView+Animations.swift in Sources */,
 				DF0586531D220A1500B4878F /* DayPlanner.xcdatamodeld in Sources */,
 				DF0586931D220F2800B4878F /* Goal.swift in Sources */,
+				DF0DA9B41D2F4F88008A40BB /* DayViewController.swift in Sources */,
 				DF0586951D220F2800B4878F /* Retro.swift in Sources */,
 				DF256BB91D221D9300BD24F0 /* ContextAware.swift in Sources */,
 				DF0586971D22117100B4878F /* Priority.swift in Sources */,
 				DF05868A1D220F2800B4878F /* Thought+CoreDataProperties.swift in Sources */,
+				DF0DA9C71D317A35008A40BB /* GoalsViewController.swift in Sources */,
+				DF19BB401D3C4DB80013F546 /* NSDate+Planner.swift in Sources */,
+				DF0DA9BA1D2F4FE9008A40BB /* FocusSessionViewController.swift in Sources */,
 				DF05868E1D220F2800B4878F /* Task+CoreDataProperties.swift in Sources */,
 				DF05868F1D220F2800B4878F /* Task.swift in Sources */,
+				DF0DA9B61D2F4FB8008A40BB /* RetroViewController.swift in Sources */,
 				DF256BBE1D2221ED00BD24F0 /* NSManagedObject+Planner.swift in Sources */,
 				DF05864B1D220A1500B4878F /* AppDelegate.swift in Sources */,
+				DF0DA9CD1D32A87F008A40BB /* Dispatch+Planner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,10 +493,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DF0586561D220A1500B4878F /* LaunchScreen.storyboard */ = {
+		DF0DA9C11D3168A0008A40BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DF0586571D220A1500B4878F /* Base */,
+				DF0DA9C21D3168A0008A40BB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
