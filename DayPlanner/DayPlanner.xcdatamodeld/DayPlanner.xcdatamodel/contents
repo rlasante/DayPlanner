@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="Day" representedClassName=".Day" syncable="YES">
+        <attribute name="dayString" attributeType="String" syncable="YES"/>
+        <relationship name="focusSessions" toMany="YES" deletionRule="Cascade" destinationEntity="FocusSession" inverseName="day" inverseEntity="FocusSession" syncable="YES"/>
+        <relationship name="goals" toMany="YES" deletionRule="Cascade" destinationEntity="Goal" inverseName="day" inverseEntity="Goal" syncable="YES"/>
+        <relationship name="retros" toMany="YES" deletionRule="Cascade" destinationEntity="Retro" inverseName="day" inverseEntity="Retro" syncable="YES"/>
+        <relationship name="tasks" toMany="YES" deletionRule="Cascade" destinationEntity="Task" inverseName="day" inverseEntity="Task" syncable="YES"/>
+        <relationship name="thoughts" toMany="YES" deletionRule="Cascade" destinationEntity="Thought" inverseName="day" inverseEntity="Thought" syncable="YES"/>
+    </entity>
+    <entity name="FocusSession" representedClassName=".FocusSession" syncable="YES">
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="focusSessions" inverseEntity="Day" syncable="YES"/>
+        <relationship name="goals" toMany="YES" deletionRule="Cascade" destinationEntity="Goal" inverseName="session" inverseEntity="Goal" syncable="YES"/>
+        <relationship name="thoughts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Thought" inverseName="session" inverseEntity="Thought" syncable="YES"/>
+    </entity>
+    <entity name="Goal" representedClassName=".Goal" syncable="YES">
+        <attribute name="creationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="priorityString" attributeType="String" defaultValueString="low" syncable="YES"/>
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="goals" inverseEntity="Day" syncable="YES"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FocusSession" inverseName="goals" inverseEntity="FocusSession" syncable="YES"/>
+    </entity>
+    <entity name="Retro" representedClassName=".Retro" syncable="YES">
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="retros" inverseEntity="Day" syncable="YES"/>
+        <relationship name="thoughts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Thought" inverseName="retro" inverseEntity="Thought" syncable="YES"/>
+    </entity>
+    <entity name="Task" representedClassName=".Task" syncable="YES">
+        <attribute name="done" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="priorityString" attributeType="String" defaultValueString="low" syncable="YES"/>
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <relationship name="day" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="tasks" inverseEntity="Day" syncable="YES"/>
+    </entity>
+    <entity name="Thought" representedClassName=".Thought" syncable="YES">
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="thoughts" inverseEntity="Day" syncable="YES"/>
+        <relationship name="retro" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Retro" inverseName="thoughts" inverseEntity="Retro" syncable="YES"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FocusSession" inverseName="thoughts" inverseEntity="FocusSession" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Day" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="FocusSession" positionX="-27" positionY="54" width="128" height="105"/>
+        <element name="Goal" positionX="-18" positionY="63" width="128" height="120"/>
+        <element name="Retro" positionX="0" positionY="108" width="128" height="75"/>
+        <element name="Task" positionX="-54" positionY="0" width="128" height="105"/>
+        <element name="Thought" positionX="-36" positionY="45" width="128" height="105"/>
+    </elements>
+</model>
