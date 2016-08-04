@@ -75,9 +75,10 @@ class DayPageViewController: UIPageViewController, ContextConfigurable {
         guard let currentController = currentController where !currentController.date.isEqualToDate(date) else {
             return
         }
-        if let dayController = dayViewController(on: date) {
+        if var dayController = dayViewController(on: date) {
             let isAfterCurrentDate = currentController.date.compare(date) == .OrderedAscending
             let direction: UIPageViewControllerNavigationDirection = isAfterCurrentDate ? .Forward : .Reverse
+            dayController.prepare(with: context)
             setViewControllers([dayController], direction: direction, animated: animated, completion: nil)
         }
     }

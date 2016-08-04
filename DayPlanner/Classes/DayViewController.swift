@@ -20,10 +20,24 @@ class DayViewController: UIViewController, ContextConfigurable {
             fetchDay()
         }
     }
-    private var day: Day!
+    private var day: Day! {
+        didSet {
+            configureGoals()
+        }
+    }
+
+    @IBOutlet weak var goalsView: UIStackView!
+    @IBOutlet weak var tasksView: UIStackView!
+    @IBOutlet weak var thoughtsView: UIStackView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        configureGoals()
     }
 
     func fetchDay() {
@@ -36,6 +50,38 @@ class DayViewController: UIViewController, ContextConfigurable {
             self.day = day
         } catch {
             assertionFailure("We were unable to fetch or create a day object")
+        }
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        if var goalController = segue.destinationViewController as? GoalsViewController {
+            goalController.day = day
+            goalController.prepare(with: context)
+        }
+    }
+
+    func configureGoals() {
+        guard let day = day, let goalsView = goalsView else {
+            return
+        }
+        for view in goalsView.subviews {
+            view.removeFromSuperview()
+        }
+
+        let sortedGoals = day.goals.sort { (firstGoal, secondGoal) -> Bool in
+            let priorityOrder = firstGoal.priority >= secondGoal.priority
+            let dateOrdering = firstGoal.creationDate.compare(secondGoal.creationDate) == .OrderedDescending
+            return priorityOrder && dateOrdering
+        }
+        for goal in sortedGoals {
+            let goalLabel = UILabel()
+            goalLabel.text = goal.text
+            goalsView.addArrangedSubview(goalLabel)
+        }
+
+        if sortedGoals.count == 0 {
+            goalsView.setNeedsLayout()
         }
     }
 }

@@ -150,6 +150,7 @@ extension GoalsViewController: UITextFieldDelegate {
                 return
         }
         cell.textField.resignFirstResponder()
+        let _ = try? context.save()
     }
 
     @IBAction func onLongPress(recognizer: UILongPressGestureRecognizer) {

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DF05864B1D220A1500B4878F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05864A1D220A1500B4878F /* AppDelegate.swift */; };
 		DF05864D1D220A1500B4878F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05864C1D220A1500B4878F /* HomeViewController.swift */; };
-		DF0586501D220A1500B4878F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF05864E1D220A1500B4878F /* Main.storyboard */; };
 		DF0586531D220A1500B4878F /* DayPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF0586511D220A1500B4878F /* DayPlanner.xcdatamodeld */; };
 		DF0586551D220A1500B4878F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0586541D220A1500B4878F /* Assets.xcassets */; };
 		DF05866E1D220A1600B4878F /* DayPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05866D1D220A1600B4878F /* DayPlannerUITests.swift */; };
@@ -45,6 +44,8 @@
 		DF0DA9CF1D32AF10008A40BB /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0DA9CE1D32AF10008A40BB /* UIView+Animations.swift */; };
 		DF19BB3E1D39DE020013F546 /* DayPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF19BB3D1D39DE020013F546 /* DayPageViewController.swift */; };
 		DF19BB401D3C4DB80013F546 /* NSDate+Planner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF19BB3F1D3C4DB80013F546 /* NSDate+Planner.swift */; };
+		DF19BB421D5198F90013F546 /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF19BB411D5198F90013F546 /* DismissSegue.swift */; };
+		DF19BB451D519A7C0013F546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF05864E1D220A1500B4878F /* Main.storyboard */; };
 		DF256BB91D221D9300BD24F0 /* ContextAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BB81D221D9300BD24F0 /* ContextAware.swift */; };
 		DF256BBB1D2220BB00BD24F0 /* ThoughtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BBA1D2220BB00BD24F0 /* ThoughtTest.swift */; };
 		DF256BBE1D2221ED00BD24F0 /* NSManagedObject+Planner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF256BBD1D2221ED00BD24F0 /* NSManagedObject+Planner.swift */; };
@@ -112,6 +113,7 @@
 		DF0DA9CE1D32AF10008A40BB /* UIView+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
 		DF19BB3D1D39DE020013F546 /* DayPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayPageViewController.swift; path = Classes/DayPageViewController.swift; sourceTree = "<group>"; };
 		DF19BB3F1D3C4DB80013F546 /* NSDate+Planner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Planner.swift"; path = "Classes/NSDate+Planner.swift"; sourceTree = "<group>"; };
+		DF19BB411D5198F90013F546 /* DismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DismissSegue.swift; path = Classes/DismissSegue.swift; sourceTree = "<group>"; };
 		DF256BB81D221D9300BD24F0 /* ContextAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextAware.swift; path = Classes/ContextAware.swift; sourceTree = "<group>"; };
 		DF256BBA1D2220BB00BD24F0 /* ThoughtTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtTest.swift; sourceTree = "<group>"; };
 		DF256BBD1D2221ED00BD24F0 /* NSManagedObject+Planner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Planner.swift"; path = "Classes/NSManagedObject+Planner.swift"; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				DF0DA9CC1D32A87F008A40BB /* Dispatch+Planner.swift */,
 				DF0DA9CE1D32AF10008A40BB /* UIView+Animations.swift */,
 				DF19BB3F1D3C4DB80013F546 /* NSDate+Planner.swift */,
+				DF19BB411D5198F90013F546 /* DismissSegue.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -387,9 +390,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF19BB451D519A7C0013F546 /* Main.storyboard in Resources */,
 				DF0586551D220A1500B4878F /* Assets.xcassets in Resources */,
 				DF0DA9C31D3168A0008A40BB /* LaunchScreen.storyboard in Resources */,
-				DF0586501D220A1500B4878F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +433,7 @@
 				DF0586531D220A1500B4878F /* DayPlanner.xcdatamodeld in Sources */,
 				DF0586931D220F2800B4878F /* Goal.swift in Sources */,
 				DF0DA9B41D2F4F88008A40BB /* DayViewController.swift in Sources */,
+				DF19BB421D5198F90013F546 /* DismissSegue.swift in Sources */,
 				DF0586951D220F2800B4878F /* Retro.swift in Sources */,
 				DF256BB91D221D9300BD24F0 /* ContextAware.swift in Sources */,
 				DF0586971D22117100B4878F /* Priority.swift in Sources */,
